@@ -22,7 +22,7 @@ dotenv.load();
 const postgres_user = process.env.DB_USER;
 const postgres_pass = process.env.DB_PASS;
 
-// const client = new Client({ connectionString:process.env.DB_URL, ssl: true})
+const client = new Client({ connectionString:process.env.DB_URL, ssl: true})
 
 
 
