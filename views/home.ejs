@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CLimbIn | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="./css/nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <%- include partials/_nav%>
+
+    <div id="homeWelcome">
+          <span> 
+            <h1 id="logo"> ClimbIN </h1>
+            <p id="moto"> Find your new adventure! </p>
+            <p id="description"> Explore available climbing routes across the country. Choose between different locations and styles. Add the most insteresting options to your favorites and have fun! </p>
+          </span>
+   
+    </div>
+
+
+
+ <div class="wrapper">
+
+
+ <div id="searchForm">
+  	<form method="post" action="/searchForm">
+  	  <select  name="routeLocation" >
+  		<option value="false">Choose location</option>
+  		<% for (let state of states) { %>
+  		<option value=<%= state %>><%= state %></option>
+  		<% } %>
+  	  </select>
+
+
+
+  	  <select name="routeType">
+        <option value="false">Choose Style</option>
+        <option value="Trad">Trad</option>
+        <option value="Sport">Sport</option>
+        <option value="TR">Toprope</option>
+        <option value="Boulder">Boulder</option>
+        <option value="Alpine">Apline</option>
+        <option value="Ice">Ice</option>
+  	  </select>
+
+    
+      <button id="searchBtn" type="submit"> Find Routes</button>
+
+
+    </form>
+ </div>
+
+
+  <% if (data) { %>
+  	<%- include partials/_infoBlock %>
+  <% } else { %>
+  	<h2><%= errHolder%></h2>
+   <a href='https://www.mountainproject.com/'>mountianproject.com</a>
+  <% } %>
+
+
+</div>
+
+
+
+
+  
+
+
+</body>
+
+<footer>
+	
+<%- include partials/_footer %>
+</footer>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>ClimbIn | Sign In | Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="./css/nav.css">
+ </head>
+
+  <body>
+<div class="signWrapper">
+
+
+    <div id="login-wrapper">
+    <h3 style="display: none"><%= errHolder %></h3>
+
+    <form action="/login" method="post" class="logIn">
+          <div id="title">SIGN IN</div>
+          <input class="logIn_input" ="" type="text" name="username" placeholder="User Name"/>
+          <input class="logIn_input" type="text" name="email" placeholder="Email"/>
+          <input class="logIn_input" type="password" name="password" placeholder="Password"/>
+          <input class="logIn_btn" type="submit" value="SIGN IN"/>
+    </form>      
+            
+        
+
+    <form action="/register" method="post" class="signUp">
+       <div id="title">SIGN UP</div>
+       <input class="logIn_input" type="text" name="username" placeholder=" User Name"/>
+       <input class="logIn_input" type="text" name="fname" placeholder=" First Name"/>
+       <input class="logIn_input" type="text" name="lname" placeholder="Last Name"/>
+       <input class="logIn_input" type="text" name="email" placeholder="Email"/>
+       <input class="logIn_input" type="password" name="password" placeholder="Password"/>
+       <input class="logIn_input" type="password" name="password2" placeholder="Repeat Password"/>
+       <input class="logIn_btn" type="submit" value="SIGN UP"/>
+    </form>
+
+  </div>
+</div>
+
+
+
+
+  </body>
+  
+  <footer></footer>
+
+</html>

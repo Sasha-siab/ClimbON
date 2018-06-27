@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favorites</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="./css/nav.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+<%- include partials/_nav %>
+
+
+
+	
+	
+	
+
+<div id="main">
+<div id="infoBlock">
+<div class="gallery">
+<div style="display:none" id='hiddenWrapper'>
+
+ <div class="item"> <%= favData %></div>
+
+</div>
+
+	<h1>Favorites</h1>
+<div class="favorites_container"></div>
+</div> </div></div>
+
+
+</body>
+<footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="./scripts/favorites.js"></script>
+
+<%- include partials/_footer %>
+</footer>
+
+</html>
+
+
+
+

@@ -1,0 +1,35 @@
+<div id="infoBlock">
+<div class="gallery">
+<% for (var i = 0; i < data.length ; i++) { %>
+
+
+
+ <div class="item">
+
+ <div class="imgContainer"><img src="<%= data[i].imgMedium %> " alt="photo of the route"></div>
+ <span> <%= data[i].name %> </span> <br/>
+ <div class="desc">
+    Location: <span> <%= data[i].location[0] %>  </span><br/>
+    Style:<span> <%= data[i].type %>  </span><br/>
+    Rating:<span> <%= data[i].rating %>  </span><br/>
+    Pitches:<span> <%= data[i].pitches %>  </span><br/>
+ </div>
+ <span> <a target="_blank" href="<%= data[i].url %>">Get more information</a> </span><br/>
+
+
+<form style="favorite" action="/favorites/<%= data[i].id %>" method="post">
+<button class="fav_Btn" type="submit">Add to Favorites</button>
+</form>
+</div>
+
+<% } %>
+
+
+  </div>
+
+
+
+  <script src="app.js"></script>
+
+
+

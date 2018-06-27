@@ -1,0 +1,406 @@
+
+/*_________________________________NAV*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    height: 3em;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.main {
+    margin-top: 30px; 
+}
+
+
+
+
+
+
+
+/*_________________________________HOME WELOME SECTION*/
+
+#homeWelcome {
+    padding: 25px;
+    height: 18em;
+    margin-top: 50px;
+    padding: 25px;
+    height: 60vh;
+    background: url(../images/123.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+img.heroImage {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -150px;
+    z-index: -10;
+    left: 0;
+    opacity: .95;
+    top: 4vw;
+    color: #300404;
+}
+
+h1#logo {
+    font-size:  50px;
+    color: #2e2a26;
+    letter-spacing:  1.5px;
+    font-weight: 900;
+}
+
+p#moto {
+    color:  #2e2a26;
+    font-size:  30px;
+    letter-spacing:  1px;
+}
+
+p#description {
+    color:  #2e2a26;
+    letter-spacing:  1px;
+    font-size:  20px;
+    width:  400px;
+    float:  left;
+    margin-top:  0px;
+}
+
+
+/*_________________________________MAIN PART*/
+
+body {
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+}
+
+form {
+    padding: 15px;
+    display: block;
+    margin-top: 0em;
+}
+
+
+
+#container {
+    margin-top:  200px;
+    margin-bottom:  200px;
+}
+
+
+div#main {
+
+    margin-top: 50px;
+    margin-left:  50px;
+}
+
+
+div#infoBlock {
+    background: white;
+}
+
+.item {
+
+    background-color: #9e9e9e00;
+    border: 1px #a9a9a93d solid;
+    border-radius: 3px;
+    box-shadow: 0.5px 0.5px 22.5px -7.5px #bab5b5;
+    padding: 15px;
+    width: calc(22% - 32px);
+    float: left;
+    margin: 1.5%;
+}
+
+img {
+    width: 100%;
+}
+
+.imgContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+}
+
+
+.imgContainer {
+    overflow:  hidden;
+    width:  100%;
+}
+
+.wrapper {
+    background-color:  white;
+}
+
+
+button.fav_Btn {
+    background-color: #f97b1bad;
+}
+
+button.fav_Btn:hover {
+    background-color: #2483a0;
+}
+
+
+.gallery {
+    clear: both;
+    overflow: auto;
+}
+
+button.fav_Btn {
+    font-size: 10px;
+}
+
+
+/*_________________________________FOOTER*/
+
+.footer {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 3em;
+}
+
+
+
+.main {
+    margin-bottom: 30px; 
+}
+
+
+h1#footerSentence {
+    color:  white;
+    font-size:  12px;
+    font-weight: 100;
+    letter-spacing:  1px;
+    opacity:  .8;
+    text-align:  center;
+    margin:  15px;
+}
+
+
+
+
+
+/*   Login    */
+
+
+div#login-wrapper {
+    background: #ffffff69;
+}
+
+div#title {
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+.signWrapper {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.signWrapper {
+    background: url(../images/1234.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+div#login-wrapper {
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 0px 0px 3px -1px black;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+div#title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 19px;
+}
+
+
+input.logIn_input {
+    width: 50%;
+    margin-left: 25% !important;
+    padding: 8px;
+    margin: 8px 0px;
+    border: 1px solid #00000047;
+    border-radius: 2px;
+}
+
+input.logIn_btn {
+    padding: 10px;
+    -webkit-appearance: none;
+    background: white;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+
+
+div#title {
+    margin-top: 10px;
+}
+
+
+
+/*Processing */
+
+.processingWrapper {
+    background: url('../images/1234.jpg');
+    background-size: cover;
+    width:  100%;
+    background-position: center;
+    height:  100%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+
+    -webkit-appearance: none;
+    background: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: white;
+    cursor: pointer;
+
+}
+
+form {
+    text-align: center;
+}
+
+
+
+
+
+/*_________________________________RESPONSIVE*/
+
+
+/* tablet */
+@media screen and (max-width: 992px) {
+
+
+
+.item {
+    background-color: #9e9e9e00;
+    border: 1px #a9a9a93d solid;
+    border-radius: 3px;
+    box-shadow: 0.5px 0.5px 22.5px -7.5px #bab5b5;
+    padding: 15px;
+    width: calc(30% - 32px);
+    float: left;
+    margin: 1.5%;
+}
+
+
+
+
+}
+
+
+
+
+/* mobile */
+@media screen and (max-width: 600px) {
+
+p#description {
+    color: #393939;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 250px;
+    float: left;
+    margin-top: 0px;
+    font-weight: 600;
+    background: #e6e6e69c;
+    padding: 15px;
+    width: 100%;
+    margin-left: -16px;
+    text-align: left;
+}
+
+
+.item {
+    background-color: #9e9e9e00;
+    border: 1px #a9a9a93d solid;
+    border-radius: 3px;
+    box-shadow: 0.5px 0.5px 22.5px -7.5px #bab5b5;
+    padding: 15px;
+    width: calc(80% - 32px);
+    float: left;
+    margin: 1.5%;
+}
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 580px) and (min-width: 400px) {
+
+.item {
+
+    width: calc(47% - 32px);
+
+}
+
+}
+
+
+@media screen and (max-width: 399px) {
+    .item {
+
+    width: calc(97% - 32px);
+
+}
+}
+
+
+
+
+
+
+
+
