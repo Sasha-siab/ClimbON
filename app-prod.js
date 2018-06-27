@@ -10,7 +10,6 @@ const Sequelize = require('sequelize')
 const passport = require('passport');
 const Strategy = require('passport-local').Strategy;
 
-const PORT = process.env.PORT || 3000
 const app = express();
 
 app.set('view engine', 'ejs')
