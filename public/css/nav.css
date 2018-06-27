@@ -97,7 +97,24 @@ form {
     margin-top: 0em;
 }
 
+h1.fav_h {
+    color:  black;
+    text-align:  center;
+    border-bottom: 1px solid gray;
+    padding-bottom:  20px;
+    width:  60%;
+    margin:  0 auto;
+    margin-top:  20px;
+}
 
+h1.route-name {
+    color:  black;
+    font-size:  25px;
+    font-weight: 600;
+    letter-spacing:  1px;
+    margin-bottom:  0;
+    /* text-align:  center; */
+}
 
 #container {
     margin-top:  200px;
@@ -151,6 +168,7 @@ img {
 
 button.fav_Btn {
     background-color: #f97b1bad;
+    font-size: 10px;
 }
 
 button.fav_Btn:hover {
@@ -163,9 +181,6 @@ button.fav_Btn:hover {
     overflow: auto;
 }
 
-button.fav_Btn {
-    font-size: 10px;
-}
 
 
 /*_________________________________FOOTER*/
@@ -200,7 +215,8 @@ h1#footerSentence {
 
 
 
-/*   Login    */
+
+/*_________________________________LOGIN*/
 
 
 div#login-wrapper {
@@ -271,7 +287,9 @@ div#title {
 
 
 
-/*Processing */
+
+/*_________________________________PROCESSING*/
+
 
 .processingWrapper {
     background: url('../images/1234.jpg');
@@ -290,7 +308,7 @@ h1 {
     color: white;
 }
 
-button {
+.confirm_btn {
 
     -webkit-appearance: none;
     background: none;

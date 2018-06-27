@@ -3,7 +3,7 @@
 <head>
 	<title>confirmation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/nav.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 	<div class="textConfirm">
 	  <form action='/newUserLogin' method='post'>
 	    <h1 style="text-align:center;">You have registered successfully!</h1>
-	      <button type='submit'>Click to continue</button>
+	      <button type='submit' class="confirm_btn">Click to continue</button>
 	        <input type="text" name="username" value=<%= data.username %> style="display:none;" />
 	        <input type="text" name="password" value=<%= data.password %> style="display:none;" />
 	      </button>

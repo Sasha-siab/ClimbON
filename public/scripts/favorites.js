@@ -24,13 +24,12 @@ $('document').ready(function(){
 	   		html += `
 	   		<div class="item">
 	   			<div class="imgContainer"> <img class="route-img" src="${thisRoute.imgMedium}"> </div>
-	   			<h1 class="route-name">${thisRoute.name}</h1>
-	   			<p class="route-location">Location: ${thisRoute.location[0]}</p>
-	   			<p class="route-type">Style: ${thisRoute.type}</p>
-	   			<p class="route-rating">Rating: ${thisRoute.rating}</p>
-	   			<p class="route-pitches">Pitches: ${thisRoute.pitches}</p>
-	   			<a class="route-url" href="${thisRoute.url}">Get more information</a>
-	   			<button class="fav_Btn" type="submit">Remove from Favorites</button>
+	   			<h1 class="route-name">${thisRoute.name}</h1><br/>
+	   			<span class="route-location">Location: ${thisRoute.location[0]}</span><br/>
+	   			<span class="route-type">Style: ${thisRoute.type}</span><br/>
+	   			<span class="route-rating">Rating: ${thisRoute.rating}</span><br/>
+	   			<span class="route-pitches">Pitches: ${thisRoute.pitches}</span><br/>
+	   			<a class="route-url" href="${thisRoute.url}">Get more information</a><br/>
 	   		</div>
 
 	   		`
