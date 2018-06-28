@@ -328,7 +328,13 @@ form {
     text-align: center;
 }
 
+input.logIn_input {
 
+    margin-right: 300px;
+}
+input.logIn_btn {
+    margin-right: 490px;
+}
 
 
 

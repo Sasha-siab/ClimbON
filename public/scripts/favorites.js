@@ -2,11 +2,11 @@
 $('document').ready(function(){
 
 	var dataRoutes = $('.item').text();
-	dataRoutes = '[' + dataRoutes + ']';
+	dataRoutes = '[' + dataRoutes + ']'; 
 	console.log(dataRoutes);
 	$.ajax({
 	   url: `https://www.mountainproject.com/data/get-routes?routeIds=${dataRoutes}&key=200243352-e1032796c183b3f14287ddd2faec242c`,
-	   data: {
+	   data: { 
 	      format: 'json'
 	   },
 	   error: function() {

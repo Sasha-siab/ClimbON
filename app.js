@@ -305,11 +305,15 @@ https.get('https://www.mountainproject.com/data/get-to-dos?email=alexsbrk91@gmai
 
 app.post('/searchForm', (req,res)=>{
 
+	var routeLocation= req.body.routeLocation;
+	routeLocation = routeLocation.split('%20').join(' ');
+	var routeType = req.body.routeType;
+	var result = [];
 
-	function locationFilter(arr) {
+	function locationFilter(arr) { 
 		let container = [];
 		for (var i = arr.length - 1; i >= 0; i--) {
-			if (arr[i].location[0] === req.body.routeLocation) {
+			if (arr[i].location[0] === routeLocation) {
 				container.push(arr[i]);
 			}
 		}
@@ -327,11 +331,12 @@ app.post('/searchForm', (req,res)=>{
 		return container
 	}
 
-	console.log('search!!')
-	var routeLocation= req.body.routeLocation;
-	var routeType = req.body.routeType;
-	var result = [];
+	// console.log('search!!')
 
+
+	console.log('------------------------------------------------------------------------------------------');
+	console.log(routeLocation); 
+	console.log('------------------------------------------------------------------------------------------');
 
 
 	if (req.body.routeLocation !== "false" && req.body.routeType !== "false") {
@@ -376,7 +381,7 @@ app.post('/searchForm', (req,res)=>{
 		}
 		console.log(result[0])
 		if (result[0][0]===undefined) {
-			return res.render('home', {errHolder:'Oppps.... We have no routes. Please check the Moutian Project website for more options.', data:false, states:states});
+			return res.render('home', {errHolder:'Oppps.... We have no routes. Please check the Mountain Project website for more options.', data:false, states:states});
 		}
 		return res.render('home', {errHolder:'', data:result[0], states:states});
 
@@ -397,7 +402,7 @@ app.post('/searchForm', (req,res)=>{
 	}
 
 		if (result[0][0]===undefined) {
-			return res.render('home', {errHolder:'Oppps.... We have no routes. Please check the Moutian Project website for more options.', data:false, states:states});
+			return res.render('home', {errHolder:'Oppps.... We have no routes. Please check the Mountain Project website for more options.', data:false, states:states});
 		}
 		return res.render('home', {errHolder:'', data:result[0], states:states});
 

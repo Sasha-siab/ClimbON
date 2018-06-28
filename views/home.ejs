@@ -34,7 +34,8 @@
   	  <select  name="routeLocation" >
   		<option value="false">Choose location</option>
   		<% for (let state of states) { %>
-  		<option value=<%= state %>><%= state %></option>
+      <% let stateJoin = state.split(' ').join('%20')%>
+  		<option value=<%= stateJoin %>><%= state %></option>
   		<% } %>
   	  </select>
 
